@@ -1,0 +1,563 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* Admin Menu Icon */
+.toplevel_page_wpmerchant .wp-menu-image img{
+	height:20px;
+	width:20px;
+}
+.wpmerchant_product_data_metabox label {
+	float: left;
+	width: 150px;
+}
+.wpmerchant_plan_data_metabox label {
+	float: left;
+	width: 150px;
+}
+.wpmerchant_plan_data_metabox_wide label {
+	float: left;
+	width: 200px;
+}
+/*Product MetaBox Container */
+.product_container{ 
+	width: 100%;
+	overflow:hidden;
+}
+ul.product_container_tabs.wpm_tabs {
+  background: #fafafa;
+  line-height: 1em;
+  float: left;
+  width: 20%;
+  margin: 0;
+  position: relative;
+  padding: 0 0 10px;
+  border-right: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.product_container_tabs li {
+  margin-bottom: 0px;
+}
+.product_container_tabs li a {
+  padding: 10px;
+  line-height: 20px!important;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  cursor:pointer;
+}
+.product_container_tabs li.active a{
+	position: relative;
+	  background-color: #eee;
+	  color: #555;
+}
+.wpmTabText{
+	display:inline-block;
+	padding-left:5px;
+}
+@media only screen and (max-width: 1137px) and (min-width:850px) {
+	.product_container ul.product_container_tabs li a {
+	  position: relative;
+	  padding-left: 40%;
+	}
+	.wpmTabText{
+		display:none;
+	}
+}
+@media only screen and (max-width: 849px) and (min-width:657px) {
+	/*.product_container ul.product_container_tabs li a {
+	  position: relative;
+	  padding-left: 40%;
+	}*/
+	.wpmTabText{
+		display:inline-block;
+		padding-left:5px;
+	}
+}
+@media only screen and (max-width: 656px) {
+	.product_container ul.product_container_tabs li a {
+	  position: relative;
+	  padding-left: 40%;
+	}
+	.wpmTabText{
+		display:none;
+	}
+}
+.wpm_tabs:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 9999em;
+  position: absolute;
+  bottom: -9999em;
+  left: 0;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+}
+.tab_content {
+  float: left;
+  width: 80%;
+}
+.wpm_hide{
+	display:none;
+}
+.wpm_show{
+	display:block;
+}
+.wpmerchant_product_data_metabox{
+	padding: 20px;
+}
+
+.product_field_containers{
+	padding-left:10px;
+}
+#wpmerchant_plan_data_meta_box .inside{
+	margin:0;
+	padding:0;
+}
+#wpmerchant_product_data_meta_box .inside{
+	margin:0;
+	padding:0;
+}
+#wp-wpmerchant_sold_out_message_editor-wrap, #wp-wpmerchant_pre_checkout_editor-wrap, #wp-wpmerchant_post_checkout_editor-wrap{
+	padding-right: 10px;
+	  padding-left: 150px;
+}
+/**
+INPUT PREPEND CSS
+**/
+.input-append, .input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+
+
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.input-prepend .add-on, .input-prepend .btn {
+  margin-right: -1px;
+}
+.input-append .add-on, .input-prepend .add-on, .input-append .btn, .input-prepend .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .btn-group > .dropdown-toggle {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.input-append .add-on, .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 17px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  margin-top: 1px;
+}
+/**
+END INPUT PREPEND CSS
+**/
+.mailchimp-login, .mailchimp-sign-up, .stripe-login{
+text-decoration: none;
+}
+/**
+COnnect buttons
+**/
+.stripe-login span:before {
+	background-image: url('/wp-content/plugins/wpmerchant/admin/img/logo-sc.png');
+	/*
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAeCAYAAAB+MQMgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDOEFERDkxN0I5MjE2ODExODcxRkY2N0M0RjM5MERDNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMEI2RkFCMENFMDIxMUUzODdDQ0VERDE5RDIyRDhGOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMEI2RkFBRkNFMDIxMUUzODdDQ0VERDE5RDIyRDhGOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDZDQTU5RTVFRkIxMTFFMTgxQTQ5NzlGQTgyRTA3NUYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDZDQTU5RTZFRkIxMTFFMTgxQTQ5NzlGQTgyRTA3NUYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6qyRW1AAAEMklEQVR42uyZaUhUURTHZ6bJbCEJpcV22rSk0qKiLKOghWjfaDHwS/UpKqIPFUHQAhVEC/WpaIOgBVuEivYoPyRJpWaprbRAVm6VVNr0P/V/cLvcN/PGGXME//DDeffed+fNeefec87VnTIqzRVhagV6gueguiEfxBNhhpkC3oB88BKMazLOX7UBx0A7XrcHx0FUYzZOCzAYLACbQ5int2IYS51A54YyjjfE+5eC/aCZ0rahjnOVgDLNQO+5zBql5yRrhglFX8BC8JnXH8Bi8LOxes6AMD/PJdA1UqKVyTitwSC6dzVduxjUGMb2D/H7xev60IMfs+0bKAhynl4gAVSCXPDVwT1t+XJjQQXIA+V2yyqe0UHc+i7IAtf40JW8nsSx28EnTqzLp5BmaBNWgen0jkLFGD4DLpu+vdzEr3G/kue7zeW4EbhtjCIv4wz4CLLBBd5XCk7Qc//IzSSwKwd2CWBtCbVLwEMw0MHbiafn+bT2O2CYFqbdhnEu5UfqfUV8ObE2370NrNPaUmnEGD/P/I4vtcTynB0ODOOiF3lo/UCqpGFMSg1D/tLXj2FEaznGUkeQGcAw1gsVJ3B7mKfM0AbIGtwCNtHVStleSC9r6eDhn/yHPfMXOA/O2uxn6cq1LLU4bcwu7q+ZWvsIMNHLTLSF1nlTy1ea04D36A12ru7ys9Z1/eDavxtCVJpJ44gOgOVa/1ilXkvX+qQ8WUMDL+MeqO7Bc7w2O7sMPMrllsdc41SY37osrZwQ53igfD5uMI6VaoxkeaIqm4ZxcWVIRO6n9A/3MjpJ+EvRbk5nEnYd7OZG5gujcXLCbOwXhjYr20409MUxw1eX4T/ljJXnrAaXDctLlsh4IiFzPkN4JKrCpj3GsNeIJhA7RVtr7BYYFWATFQOdC2JPiZRsv7quz6xOeB8kgWlgBWO9PqkYcAyNGWnqbONNP1jQ6nrNXMmxtWsZ1jK5mR0BQ7QxKQGM07yBisVUQ9tT/n1m6BNnmOWkKj8EZmt7TgHLBH+VvKneSgtTURuMJO9aaWi/YYhMluTUcahNfiRGi/Jy6cwDGSy8bjN8y2SLDDe/Uj6X8kBK1UXwFnRwmCyGon1MTCcbIpJE1oP8LHXUaf5OS1H8rVnMeTys1VKZeSdJbdWdnU4kkaoHz15EJ8FcP+ODTRZ9Qc7hT4f5wtUThBwmhE40x8NS32lGm6EYRrST7ZGmXAYVvS6UvO27wzkSxDhXuMbOsFg01S9X6W4XtD4pJ6bapAC1/6m20qPTVjAaVBnGS6BJpsfbnfnIlrIe7HFr/7dyc91JBRvNg6d8PwmWXiV34xxljBRVYTSEz+awLYalQTnLiZog0phE1pYeOsZT9cDLa3iAYhKsigLlDfWgr9yQ66IaeknAUN6kJuM0Gafei7VIVD73iEf8m8/6qN70W4ABAMmS+DJAW350AAAAAElFTkSuQmCC');
+	*/
+	}
+	.stripe-connected span:before {
+		background-image: url('/wp-content/plugins/wpmerchant/admin/img/logo-connected-sc.png');
+		}
+.stripe-login span:before, .stripe-connected span:before {
+  content: '';
+  display: inline-block;
+    width: 47px;
+    height: 20px;
+    margin-bottom: -6px;
+    background-repeat: no-repeat;
+    background-size: 47px 20px;
+	padding-right:4px;
+}
+.stripe-connected span {
+  color:#ffc200;
+}
+.mailchimp-login span:before {
+
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAUCAYAAAAeLWrqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNzdGMTE3NDA3MjA2ODExODNEMUUwMDU3RjFBODdEMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NDI3MjlBOTE3QjQxMUU1QTBFOTgyQTM1NTQzNTQwMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NDI3MjlBODE3QjQxMUU1QTBFOTgyQTM1NTQzNTQwMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Rjg3RjExNzQwNzIwNjgxMTgzRDFFMDA1N0YxQTg3RDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjc3RjExNzQwNzIwNjgxMTgzRDFFMDA1N0YxQTg3RDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5SrGR5AAAFZUlEQVR42uyYeUwdRRzH3wEFCg+l9XmArZKGigc9VLxvaf2j8cAjtcYjtYGqVdHEK5bUWxNPPKpJjbaNFbyjlqjFqvXEK5S2BktotCJ4FFGxBSWU9/wO+ayZTJf2lcD7w/BLPtmd3dnZ2d/8rtlAPB4PNDU1BUKhUOB/IPuLFhEXpyfrpZWVlYEB7XV2dkZjsdgzOl0rHhIZTl/TLzzC80kVd4mXxQE+9/cWd4jPxDrmme30eUw0iipxZVKXsLu7O1RcXLxGp3XiLNEqbre6HC42iJ/FhSM4lfvFdyii2rl3pvhdmHleLi4Sm8RrVp/DxBYRFZfwPUmzyEB1dfXZOm8OBoMRrt8kvrCswCh2CXSIcY4rPSoWcz5U2Q9FHStKUVKQe2Zxe8Vc5xnjul1ivDXvNZwvxSqT59p9fX3hkpKSZZFIZCvX24Sn1IXiG1EubsX9pnLvQNzsYHECkx+qGKX8KeotN4+jYBNyrvMZ/1DRLv6gfYx4nzB0qng1qa6tZBNqaGhICYf/C4HGbRpQ5g/iFK6bDpvFbNrvieetj/hV5CT4WrMYq0UB7cWWm15PDDTyuPh0kDHKea8nX7MgFeJDn/6niXfwsmG3yBQdY+np6TGTvZEs3GyG+MuaVL/oE/+Ik0SRuNhKRv2QiIwV+SKd9iTxJedHiPWcny9uGGSMJdZ5BlacJq4W83z6Z+NFY0bCIP1qnj3EVmJTHS4WIGbFUaSxmhoSkOfmXSg+EalHeRto5xCLPeteKQ5iUT9JYLwsjotErfjIp8/ropDQlRRFRljdaXyQXZ70Y0kmkz9t3Su0FOFJlMWYIJ4QF1j3iohxnozBC6ZjOUYZk0UPCW5XkoLiQyQdk/j2dfrkMxdPJmLtiRbQQSsBeosf2ZkixzKRfsvdArhNHzGzmSRkB/6NTjwymf8W8ZZY4LiUia1XWe0Yypgv3kaBaV4YT+AjC/nIS8Uc5mLen2f1qUHJniwgzpp330v/AsLEUowo3+pfbRX5i4jjpvgvG0yRZqApFOc9jiKNMk4ULzjPTLIUaya/QtwmjrMs11uUI7HITut5Y42zyLYPcK0dl43uQolR4mUPteRcvKmHBfUW+mjLa7KoiVuYZxHJ8kbGysZ6F9J/Mv1nEYNN/jgei37YJM/BXDvoU9AaJeZiObXW9Uxqy2baZSj1OdqmPPpN/Eh7vs87G7GmV6wFWU+sPmMnSoxgOSYm/iLuprDfRLzOpN9lHL+32m3kg1KsuIq5G6M4T7xp1camkvlAnEuxfw7fs4IxZ/opMge3dsuOdCb+LjsIN6Z616ZY1pfHJHtJUjPFIWIV1mNbezfbPm9M036SXZZfyTIRd2whTOzJ9TorbsZxz1LOtzN2OQo/ijJsm5UoX+K4F1YaRoEV1KyrLG8K48E9KT4T3AdFtPtYpJEXnevbUPx0XLSIODsNRZj68GQsLJs6NMwH30ziMrHpW9xsNcW/cdE7yeJrKco/x8pm41bLxDXMow/L9Eows1m4T1wrrmC8B7n/rPjKyube873WQqSxgMsxqs0YRgUeW892NXXg/4DP358aVsyVcQTZTJ97ZVikcctKXvy3VesZJd9DjejJHD68CivJJTE1Oe6fimI34Y5tPDfDmcMjWLxdxs3j3d429CnrZ8YEkl6GldWXY8kBkmqrtUMqJ4ltZM4f83zBwF7bR5FhJ80nKlFr35u2G7uc3fk7lOvs9Ydbgj5llXetFgtcR6m14280R/oTLDlc6bBiR6+1Bx4uMa73E+FjxHbMTns718aTeFYSS4sSKchHZUfJRakdGEjeqCKHJl1ULVOJrVtGFTk0aeVvVyO/+95wO/wrwACzDmI8o/XTmwAAAABJRU5ErkJggg==');
+	
+	/*
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAAeCAYAAAAM/mGWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNzdGMTE3NDA3MjA2ODExODNEMUUwMDU3RjFBODdEMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NDI3MjlBNTE3QjQxMUU1QTBFOTgyQTM1NTQzNTQwMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NDI3MjlBNDE3QjQxMUU1QTBFOTgyQTM1NTQzNTQwMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Rjg3RjExNzQwNzIwNjgxMTgzRDFFMDA1N0YxQTg3RDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjc3RjExNzQwNzIwNjgxMTgzRDFFMDA1N0YxQTg3RDAiLz4gPC9yZGY6RGVzY3Jp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');
+	*/
+	}
+	.mailchimp-connected span:before {
+
+		background-image: url('/wp-content/plugins/wpmerchant/admin/img/logo-connected-mc.png');
+		}
+.mailchimp-login span:before, .mailchimp-connected span:before {
+  content: '';
+  display: inline-block;
+    width: 82px;
+    height: 20px;
+    margin-bottom: -6px;
+    background-repeat: no-repeat;
+    background-size: 82px 20px;
+	padding-right:4px;
+}
+.mailchimp-connected span {
+  /*color:#60b044;*/
+  color:#ffc200;
+}
+
+/**
+CHECKOUT PRE AND POST MODAL CSS
+**/
+/**
+DASHBOARD CSS
+**/
+div#no-data-view {
+  padding: 120px;
+  text-align: center;
+}
+
+div#no-data-view div.no-data-img {
+  margin: 0 auto 28px;
+  height: 217px;
+}
+
+ div#no-data-view div.no-data-img.recipients, div#no-data-view div.no-data-img.platform_users {
+  background-image: url("/wp-content/plugins/wpmerchant/admin/img/payments.png");
+  background-size: 100% 100%;
+  width: 119px;
+}
+ div#no-data-view div.no-data-img.payments {
+  background-image: url("/wp-content/plugins/wpmerchant/admin/img/credit-card-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ div#no-data-view div.no-data-img.newsletters {
+  background-image: url("/wp-content/plugins/wpmerchant/admin/img/email-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+div#no-data-view h2 {
+  font-size: 21px;
+  color: #222;
+  font-weight: 500;
+  border: 0;
+  padding: 0;
+  margin: 0 0 4px 0;
+  font-family: 'gotham a','gotham b','helvetica neue',helvetica,arial,sans-serif;
+}
+div#no-data-view p {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 15px;
+}
+div#no-data-view div.controls {
+  background: url("merch/small-divider-21922fb009050cab68dc188d14ea3c4a.png") 50% 0 no-repeat;
+  padding-top: 15px;
+}
+/**
+THESE DON'T SEEM TO BE BEING USED
+a.button.medium,button.button.medium, strong.button.medium, div.button.medium {
+  height: 31px;
+}
+a.button.grey, button.button.grey,strong.button.grey, div.button.grey {
+  background: #adb2bb;
+  background: #adb2bb;
+  background: -webkit-linear-gradient(#ccd0d6,#adb2bb);
+  background: -moz-linear-gradient(#ccd0d6,#adb2bb);
+  background: -ms-linear-gradient(#ccd0d6,#adb2bb);
+  background: -o-linear-gradient(#ccd0d6,#adb2bb);
+  background: linear-gradient(#ccd0d6,#adb2bb);
+}
+a.button.medium,button.button.medium, strong.button.medium, div.button.medium {
+  height: 31px;
+}
+a.button.grey, button.button.grey,strong.button.grey, div.button.grey {
+  background: #adb2bb;
+  background: #adb2bb;
+  background: -webkit-linear-gradient(#ccd0d6,#adb2bb);
+  background: -moz-linear-gradient(#ccd0d6,#adb2bb);
+  background: -ms-linear-gradient(#ccd0d6,#adb2bb);
+  background: -o-linear-gradient(#ccd0d6,#adb2bb);
+  background: linear-gradient(#ccd0d6,#adb2bb);
+}
+a.button, button.button,strong.button, div.button {
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  padding: 1px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button, button.button,strong.button, div.button {
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  padding: 1px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button, div.filter, label {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button.medium span,button.button.medium span, strong.button.medium span,div.button.medium span {
+  display: block;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 31px;
+  line-height: 31px;
+}
+a.button.grey span,button.button.grey span, strong.button.grey span, div.button.grey span {
+  display: block;
+  color: ;
+  text-shadow: 0 1px 0 #fff;
+  background: ;
+  background: ;
+  background: -webkit-linear-gradient(#f7f8fa,#eff1f4);
+  background: -moz-linear-gradient(#f7f8fa,#eff1f4);
+  background: -ms-linear-gradient(#f7f8fa,#eff1f4);
+  background: -o-linear-gradient(#f7f8fa,#eff1f4);
+  background: linear-gradient(#f7f8fa,#eff1f4);
+  -webkit-box-shadow: inset 0 1px 0 #fff;
+  -moz-box-shadow: inset 0 1px 0 #fff;
+  -ms-box-shadow: inset 0 1px 0 #fff;
+  -o-box-shadow: inset 0 1px 0 #fff;
+  box-shadow: inset 0 1px 0 #fff;
+}
+a.button.medium span,button.button.medium span, strong.button.medium span,div.button.medium span {
+  display: block;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 31px;
+  line-height: 31px;
+}
+a.button.grey span,button.button.grey span, strong.button.grey span, div.button.grey span {
+  display: block;
+  color: ;
+  text-shadow: 0 1px 0 #fff;
+  background: ;
+  background: ;
+  background: -webkit-linear-gradient(#f7f8fa,#eff1f4);
+  background: -moz-linear-gradient(#f7f8fa,#eff1f4);
+  background: -ms-linear-gradient(#f7f8fa,#eff1f4);
+  background: -o-linear-gradient(#f7f8fa,#eff1f4);
+  background: linear-gradient(#f7f8fa,#eff1f4);
+  -webkit-box-shadow: inset 0 1px 0 #fff;
+  -moz-box-shadow: inset 0 1px 0 #fff;
+  -ms-box-shadow: inset 0 1px 0 #fff;
+  -o-box-shadow: inset 0 1px 0 #fff;
+  box-shadow: inset 0 1px 0 #fff;
+}
+a.button span, button.button span,strong.button span, div.button span {
+  display: block;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+a.button span, button.button span,strong.button span, div.button span {
+  display: block;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+Inherited from 
+a.button, button.button,strong.button, div.button {
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  padding: 1px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button, button.button,strong.button, div.button {
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  padding: 1px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.075);
+  -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button, div.filter, label {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+a.button.medium img,button.button.medium img, strong.button.medium img,div.button.medium img {
+  margin-right: 7px;
+  position: relative;
+  top: 1px;
+}
+a.button.medium img,button.button.medium img, strong.button.medium img,div.button.medium img {
+  margin-right: 7px;
+  position: relative;
+  top: 1px;
+}
+a.button img, button.button img,strong.button img, div.button img {
+  -moz-user-drag: -moz-none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+a.button img, button.button img,strong.button img, div.button img {
+  -moz-user-drag: -moz-none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+*/
+a.arrow {
+  display: inline-block;
+  position: relative;
+  padding-right: 9px;
+  bottom: 0px;
+  margin-left:-10px;
+  width:100px;
+}
+a.arrow::after {
+  pointer-events: none;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 1px;
+  top: 3px;
+  height: 100%;
+  width: 3px;
+  background: url("/wp-content/plugins/wpmerchant/admin/img/anchor-arrow.png") 0 50% no-repeat;
+  -webkit-transform: rotate(0deg); */
+    -ms-transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+	left:91px;
+}
+div#no-data-view div.controls {
+  background: url("/wp-content/plugins/wpmerchant/admin/img/small-divider.png") 50% 0 no-repeat;
+  padding-top: 15px;
+}
+.wpm_bullets a {
+    width: 12px;
+    height: 12px;
+    float: left;
+    /* text-indent: -4000px; */
+    position: relative;
+    background: #999;
+    background: #999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: 49%;
+    box-shadow:none;
+	margin-right:5px;
+}
+.wpm_bullets a.active {
+	box-shadow: -moz-box-shadow: inset 0 0 4px #000000;
+    -webkit-box-shadow: inset 0 0 4px #000000;
+    box-shadow: inset 0 0 4px #000000;
+}
+/**
+END DASHBOARD CSS
+**/
+
