@@ -18,7 +18,7 @@ We try to simplify the whole process; from connecting to payment processors and 
 
 Check out a working example of a WPMerchant powered site at [TemplateLauncher.com](http://www.templatelauncher.com/services). Click on the BUY NOW button under the PAID LAUNCH column. This is a real site and it is listed here as a live demo of our product; so don't enter in your credit card information unless you actually want to buy the product.  
 
-This version of WPMerchant provides the following features:
+= Features =
 * One Click Ordering for your customers
 * Create, Edit and Sell Products and/or Product Bundles on your website.
 * One Click Connect to your Payment Processor (ie Stripe; specifically Stripe Checkout)
