@@ -19,7 +19,13 @@ We try to simplify the whole process; from connecting to payment processors and 
 Check out a working example of a WPMerchant powered site at [TemplateLauncher.com](http://www.templatelauncher.com/services). Click on the BUY NOW button under the PAID LAUNCH column. This is a real site and it is listed here as a live demo of our product; so don't enter in your credit card information unless you actually want to buy the product.  
 
 This version of WPMerchant provides the following features:
-*One Click Ordering for your customers, *Create, Edit and Sell Products and/or Product Bundles on your website., *One Click Connect to your Payment Processor (ie Stripe; specifically Stripe Checkout), *One Click Connect to your Mailing List Provider (ie MailChimp), *Subscribe users to a MailChimp list on successful purchase, *Redirect a user to a Thank you apge after checkout or display a custom message to customer on successful purchase, *[Check out our site for our full feature list](http://www.wpmerchant.com).
+* One Click Ordering for your customers
+* Create, Edit and Sell Products and/or Product Bundles on your website.
+* One Click Connect to your Payment Processor (ie Stripe; specifically Stripe Checkout)
+* One Click Connect to your Mailing List Provider (ie MailChimp)
+* Subscribe users to a MailChimp list on successful purchase
+* Redirect a user to a Thank you apge after checkout or display a custom message to customer on successful purchase
+* [Check out our site for our full feature list](http://www.wpmerchant.com).
 
 = Simple One Click Checkout for Customers =
 Customers don't have to use the outdated flow of adding an item to a cart, viewing the cart, and then finally proceeding to checkout - geesh.  We make our customer checkout process as simple as possible to give you a better chance at converting a lead into a sale! With one click, your customer can purchase a single product, multiple products or a product bundle.  As such, your customers can check out much faster than on competing eCommerce plugins - which means the money gets into your pocket fast.  
@@ -50,7 +56,7 @@ We're on a coding tear right now, so you can get feature updates by subscribing 
 == Installation ==
 This section describes how to install the plugin and get it working.  If you have any questions don't hesitate to shoot us an email - [WPMerchant.com](http://www.wpmerchant.com/).
 
-**Automatic**
+=Automatic=
 1. Login to your WordPress dashboard (yoursite.com/wp-login.php). 
 2. Hover over Plugins in the left sidebar and click on Add New.
 3. Search for WPMerchant in the *Search Plugins* input. You should see WPMerchant in the results. 
@@ -58,7 +64,7 @@ This section describes how to install the plugin and get it working.  If you hav
 
 It's much quicker to install our eCommerce plugin using the Automatic route, but if you are having a hard time with this route, check out our manual instructions below.
 
-**Manual (Non-FTP)**
+=Manual (Non-FTP)=
 1. Download the plugin (wpmerchant.zip)
 2. Login to your WordPress dashboard (yoursite.com/wp-login.php)
 3. Hover over the Plugins tab in the left sidebar and click Add New 
@@ -66,7 +72,7 @@ It's much quicker to install our eCommerce plugin using the Automatic route, but
 5. Click the Choose File button.  Select the wpmerchant.zip file from your computer (typically a download goes to your Downloads directory)
 6. Click on the Activate Plugin Link.
 
-**Manual (FTP)**
+=Manual (FTP)=
 1. Download the plugin (wpmerchant.zip)
 2. Unzip that file from this and upload the unzipped folder to the `/wp-content/plugins/` directory
 3. Click on the Activate Plugin Link. 
