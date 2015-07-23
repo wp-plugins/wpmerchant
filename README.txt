@@ -56,7 +56,7 @@ We're on a coding tear right now, so you can get feature updates by subscribing 
 == Installation ==
 This section describes how to install the plugin and get it working.  If you have any questions don't hesitate to shoot us an email - [WPMerchant.com](http://www.wpmerchant.com/).
 
-=Automatic=
+= Automatic =
 1. Login to your WordPress dashboard (yoursite.com/wp-login.php). 
 2. Hover over Plugins in the left sidebar and click on Add New.
 3. Search for WPMerchant in the *Search Plugins* input. You should see WPMerchant in the results. 
@@ -64,7 +64,7 @@ This section describes how to install the plugin and get it working.  If you hav
 
 It's much quicker to install our eCommerce plugin using the Automatic route, but if you are having a hard time with this route, check out our manual instructions below.
 
-=Manual (Non-FTP)=
+= Manual (Non-FTP) =
 1. Download the plugin (wpmerchant.zip)
 2. Login to your WordPress dashboard (yoursite.com/wp-login.php)
 3. Hover over the Plugins tab in the left sidebar and click Add New 
@@ -72,7 +72,7 @@ It's much quicker to install our eCommerce plugin using the Automatic route, but
 5. Click the Choose File button.  Select the wpmerchant.zip file from your computer (typically a download goes to your Downloads directory)
 6. Click on the Activate Plugin Link.
 
-=Manual (FTP)=
+= Manual (FTP) =
 1. Download the plugin (wpmerchant.zip)
 2. Unzip that file from this and upload the unzipped folder to the `/wp-content/plugins/` directory
 3. Click on the Activate Plugin Link. 
