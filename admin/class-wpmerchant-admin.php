@@ -72,6 +72,12 @@ class Wpmerchant_Admin {
 		add_filter( 'enter_title_here', array($this,'custom_post_title') );
 		// update the messages shown to the user when a successful save has occurred on the custom post type pages - product or plan pages
 		add_filter( 'post_updated_messages', array($this,'wpmerchant_updated_messages') );
+		
+		// add links underneath the plugin name and to the left on hte wp-admin/plugins.php page
+		// this will put it to the left of deactivate 
+		add_filter( 'plugin_action_links', array($this,'wpmerchant_add_action_links'), 10, 5);
+		//PLUGIN ROW META - add_filter('plugin_row_meta',  'register_plugin_links', 10, 2);
+		// add links to the right of hte version informaiton
 	}
 	/**
 	 * Register the stylesheets for the admin area.
@@ -1764,6 +1770,23 @@ add_submenu_page( 'my-top-level-slug', 'My Custom Submenu Page', 'My Custom Subm
 	  }
 	  return $output;
 	} 
+	public function wpmerchant_add_action_links( $actions, $plugin_file ) {
+		static $plugin;
+
+		if (!isset($plugin))
+			$plugin = plugin_basename(__FILE__);
+		if ($plugin == $plugin_file) {
+
+				$dashboard = array('Dashboard' => '<a href="' . admin_url( '/wp-admin/admin.php?page=wpmerchant' ) . '">' . __('Dashboard', 'General') . '</a>');
+	
+	    			$actions = array_merge($dashboard, $actions);
+					//$actions = array_merge($site_link, $actions);
+		
+			}
+	
+			return $actions;
+	}
+	
 	/**
 	GET SETTINGS FIELD SELECT OPTION LISTS
 	**/
